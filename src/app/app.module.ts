@@ -12,8 +12,11 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { AboutComponent } from './components/about/about.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { DocumentosComponent } from './components/documentos/documentos.component';
+import { CertificadosComponent } from './components/certificados/certificados.component';
 import { HomeComponent } from './components/home/home.component';
+import { TrabajosComponent } from './components/trabajos/trabajos.component';
+
+
 
 @NgModule({
   declarations: [
@@ -21,8 +24,9 @@ import { HomeComponent } from './components/home/home.component';
     HeaderComponent,
     AboutComponent,
     FooterComponent,
-    DocumentosComponent,
-    HomeComponent
+    CertificadosComponent,
+    HomeComponent,
+    TrabajosComponent,
   ],
   imports: [
     BrowserModule,
