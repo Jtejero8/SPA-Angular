@@ -1,12 +1,12 @@
 <div class="container-header">
-  <nav class="navbar navbar-expand-lg navbar-primary bg-succes">
+  <nav class="navbar navbar-expand-lg navbar-primary bg-light">
 
       <a class="navbar-brand" href="#">
-        <img src="../../../assets/busqueda.png" width="30" height="30" alt="">
+        <img src="../../../assets/imagenes/designetl 2.0.png" width="30" height="30" alt="">
       </a>
         
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon btn-outline-primary">+</span>
     </button>
   
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -27,10 +27,18 @@
           <a class="nav-link"  [routerLink]="['footer']">Contacto</a>
         </li>
       </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="button">Search</button>
-      </form>
+      <div class="btn-group">
+          <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Language
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Spanish</a>
+            <a class="dropdown-item" href="#">English</a>
+            <a class="dropdown-item" href="#">others</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">link</a>
+          </div>
+        </div>
     </div>
   </nav>
 </div>
