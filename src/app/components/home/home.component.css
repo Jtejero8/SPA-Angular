@@ -1,0 +1,9 @@
+.conteiner-about .jumbotron img{
+    -webkit-clip-path: polygon(100% 73%, 100% 0%, 0% 0%, 0% 99%);
+    clip-path: polygon(100% 73%, 100% 0%, 0% 0%, 0% 99%);
+
+}
+
+.conteiner-about .jumbotron h1{
+    font-family: 'Cinzel', serif;
+}

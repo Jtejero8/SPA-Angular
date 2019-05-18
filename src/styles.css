@@ -2,7 +2,14 @@
 
 
 body{
-    background: url(../src/assets/background/photo-1483959651481-dc75b89291f1.jpeg);
+    background: url(../src/assets/background/madera.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
+
+
+}
+
+*{
+    font-family: 'Lora', serif;
 }
