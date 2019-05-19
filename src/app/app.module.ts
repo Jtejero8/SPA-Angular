@@ -16,7 +16,11 @@ import { CertificadosComponent } from './components/certificados/certificados.co
 import { HomeComponent } from './components/home/home.component';
 import { TrabajosComponent } from './components/trabajos/trabajos.component';
 
-
+//Translation
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { TranslationComponent } from './translation/translation.component';
 
 @NgModule({
   declarations: [
@@ -27,10 +31,23 @@ import { TrabajosComponent } from './components/trabajos/trabajos.component';
     CertificadosComponent,
     HomeComponent,
     TrabajosComponent,
+    TranslationComponent,
+   
   ],
   imports: [
     BrowserModule,
-    APP_ROUTING
+    APP_ROUTING,
+    HttpClientModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: (http: HttpClient) => {
+          return new TranslateHttpLoader(http);
+        },
+        deps: [ HttpClient ]
+      }
+    })
+    
   ],
   providers: [
     DocumentosService
