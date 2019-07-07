@@ -22,6 +22,11 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { TranslationComponent } from './translation/translation.component';
 
+
+export function createTranslateLoader(http: HttpClient) {
+  return new TranslateHttpLoader(http, './assets/i18n', '.json');
+}
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,9 +46,7 @@ import { TranslationComponent } from './translation/translation.component';
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
-        useFactory: (http: HttpClient) => {
-          return new TranslateHttpLoader(http);
-        },
+        useFactory: (createTranslateLoader),
         deps: [ HttpClient ]
       }
     })
