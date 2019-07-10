@@ -21,6 +21,7 @@ import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { TranslationComponent } from './translation/translation.component';
+import { LoadingComponent } from './components/loading/loading.component';
 
 
 export function createTranslateLoader(http: HttpClient) {
@@ -37,6 +38,7 @@ export function createTranslateLoader(http: HttpClient) {
     HomeComponent,
     TrabajosComponent,
     TranslationComponent,
+    LoadingComponent,
    
   ],
   imports: [

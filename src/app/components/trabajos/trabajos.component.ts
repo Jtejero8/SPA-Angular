@@ -7,7 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TrabajosComponent implements OnInit {
 
-  constructor() { }
+  loading: boolean= false;
+
+  constructor() {
+    document.onload;
+    this.loading= false;
+   }
 
   ngOnInit() {
   }
