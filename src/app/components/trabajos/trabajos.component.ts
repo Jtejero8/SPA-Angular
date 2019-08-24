@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './trabajos.component.html',
   styleUrls: ['./trabajos.component.css']
 })
-export class TrabajosComponent implements OnInit {
+export class TrabajosComponent {
 
   loading: boolean= false;
 
