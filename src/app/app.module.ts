@@ -42,7 +42,7 @@ export function createTranslateLoader(http: HttpClient) {
    
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({appId: 'angular-app'}),
     APP_ROUTING,
     HttpClientModule,
     TranslateModule.forRoot({
