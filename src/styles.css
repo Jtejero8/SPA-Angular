@@ -7,8 +7,14 @@ body{
     /*background: -webkit-linear-gradient(to right, #3beb58e8, #3f5efb);  /* Chrome 10-25, Safari 5.1-6 */
     /*background: linear-gradient(to right, #3beb58e8, #3f5efb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     
-    background-image: white;
+    
+    /*background-image: url("/src/assets/imagenes/letters.jpeg");
+    background-color: #ffffff;*/
+    
 
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+
+    
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -18,4 +24,5 @@ body{
 
 *{
     font-family: 'Lora', serif;
+    
 }
